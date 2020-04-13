@@ -1,0 +1,25 @@
+version: '3'
+services:
+  nginx-proxy:
+    network_mode: host
+    image: rohammosalli/nginx-proxy:v1
+    container_name: nginx-proxy
+    restart: always
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - /var/run/docker.sock:/tmp/docker.sock:ro
+
+  dnsmasq:
+    network_mode: host
+    image: rohammosalli/dnsmasq:v1
+    container_name: dnsmasq-proxy
+    restart: always
+    ports:
+      - "53:53/udp"
+  
+networks:
+  default:
+    external:
+      name: nginx-proxy
