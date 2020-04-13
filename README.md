@@ -34,8 +34,8 @@ volumes:
   if you want to add docker domain 
 
 ```conf
-  address=/.docker.com/127.0.0.1 #PUBLIC IP‍
-  address=/.docker.io/127.0.0.1 #PUBLIC IP‍
+  address=/.docker.com/127.0.0.1 #YOUR PUBLIC IP‍
+  address=/.docker.io/127.0.0.1 #YOUR PUBLIC IP‍
 ```
 
 you can Build your images:
