@@ -18,6 +18,8 @@ services:
     restart: always
     ports:
       - "53:53/udp"
+#    volumes:
+#      - dnsmasq/proxy.conf:/etc/dnsmasq.d/proxy.conf  
   
 networks:
   default:

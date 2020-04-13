@@ -17,6 +17,19 @@ Requirements
  
 if you want to add your NAME record and IP address you can add or edit this file ```dnsmasq/proxy.conf``` you have to replace ```127.0.0.1``` with your ```PUBLIC IP‍ ```‍
 
+for each domain, you add you have to build dnsmasq Dockerfile or just mount it this file form your server to the container
+
+
+Mount proxy.conf 
+
+if you don't like to build your image every time, you can uncomment these lines in ```docker-compose.yml``` 
+
+```Dockerfile
+volumes:
+  # Host:container
+  - dnsmasq/proxy.conf:/etc/dnsmasq.d/proxy.conf
+```
+
 #### for example: 
   if you want to add docker domain 
 
