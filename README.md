@@ -52,3 +52,9 @@ You can simply run this project with this command
 ```bash
 docker-compose up -d
 ```
+
+You can also Build and Run 
+
+```bash
+docker-compose up --build -d 
+```

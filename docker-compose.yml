@@ -1,6 +1,7 @@
 version: '3'
 services:
   nginx-proxy:
+    build: .
     network_mode: host
     image: rohammosalli/nginx-proxy:v1
     container_name: nginx-proxy
@@ -12,6 +13,7 @@ services:
       - /var/run/docker.sock:/tmp/docker.sock:ro
 
   dnsmasq:
+    build: dnsmasq/.
     network_mode: host
     image: rohammosalli/dnsmasq:v1
     container_name: dnsmasq-proxy
