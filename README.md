@@ -1,7 +1,7 @@
 ## Smart DNS Proxy 
 
 
-The Nginx config file is base on this [Project](https://github.com/mosajjal/byosh) 
+The Nginx config file is base on this [module](http://nginx.org/en/docs/stream/ngx_stream_ssl_preread_module.html) 
 
 #### What is Smart DNS Proxy 
 A Smart DNS is a service you can use to access geo-restricted Internet content. It became extremely popular due to the increased use of geo-blocking technology by content providers like Netflix. The service allows you to hide your geo-location, meaning you can watch geo-blocked content from anywhere in the world
