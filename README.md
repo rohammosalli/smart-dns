@@ -14,6 +14,13 @@ Requirements
 #### Run it by yourself 
 :warning: Make sure ports 80, 443 and 53 are not used in your system
 
+Linux:
+
+```
+sudo lsof -i :443
+sudo lsof -i :80
+sudo lsof -i :53
+```
  
 if you want to add your NAME record and IP address you can add or edit this file ```dnsmasq/proxy.conf``` you have to replace ```127.0.0.1``` with your ```PUBLIC IP‍ ```‍
 
